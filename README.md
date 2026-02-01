@@ -2,6 +2,7 @@
 Emacs config
 
 + [use-package](https://github.com/jwiegley/use-package)
++ [Sarasa Gothic](https://github.com/be5invis/Sarasa-Gothic)
 
 
 ## Windows
