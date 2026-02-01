@@ -1,0 +1,10 @@
+# Files
+.DS_Store
+*.last
+
+# Folders
+.idea/
+eshell
+elpa/
+auto-save-list
+
