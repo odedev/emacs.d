@@ -1,16 +1,10 @@
-;; Magit
-
-
-;; (install-package 'magit)
-
-
 ;;--------------------------------------------------------
-;; magit
+;; iedit
 ;;--------------------------------------------------------
 
-(use-package magit
+
+(use-package iedit
   :ensure t
 )
 
-
-(provide 'init-magit)
+(provide 'init-iedit)

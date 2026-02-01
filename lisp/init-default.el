@@ -2,7 +2,8 @@
 ;; init default
 ;;-------------------------------------
 
-(global-linum-mode t)
+;; (global-linum-mode t)
+(global-display-line-numbers-mode t)
 (column-number-mode t)
 (electric-pair-mode t)
 (show-paren-mode t)
@@ -10,11 +11,11 @@
 ;;(setq menu-bar-mode nil)
 ;;(setq scroll-bar-mode nil)
 
-;;remove alert-bell  
+;;remove alert-bell
 ;;(mouse-wheel-mode t)
-;;开启语法高亮  
-;;(global-font-lock-mode 1)  
-;;高亮显示区域选择  
+;;开启语法高亮
+;;(global-font-lock-mode 1)
+;;高亮显示区域选择
 ;;(transient-mark-mode t)
 
 ;;(display-time-mode t)
@@ -107,7 +108,11 @@
 (set-frame-width (selected-frame) 120)
 (set-frame-height (selected-frame) 32)
 
-;;设置删除记录  
+;; (set-frame-position (selected-frame) 200 10)
+;; (set-frame-width (selected-frame) 150)
+;; (set-frame-height (selected-frame) 39)
+
+;;设置删除记录
 ;;(setq kill-ring-max 200)
 
 ;; https://www.emacswiki.org/emacs/FillColumnIndicator

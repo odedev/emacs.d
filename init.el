@@ -13,8 +13,9 @@
 ;; tools
 (require 'init-company)
 (require 'init-ido)
-(require 'init-lsp)
 (require 'init-magit)
+(require 'init-iedit)
+;; (require 'init-lsp)
 
 ;; markup language
 (require 'init-org)

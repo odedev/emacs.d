@@ -1,7 +1,7 @@
 ;; org mode
 ;; https://orgmode.org/
 
-(install-package 'org)
+;; (install-package 'org)
 
 ;; TODO keywords
 ;;(setq org-todo-keywords
@@ -25,8 +25,8 @@
 ;;	  '((sequence "TODO(t)" "WAIT(w!)" "|" "DONE(d!)" "CANCELED(c!)")))
 
 ;; 不显示日期
-(setq org-todo-keywords
-	  '((sequence "TODO(t)" "WAIT(w)" "|" "DONE(d)" "CANCELED(c)")))
+;; (setq org-todo-keywords
+;; 	  '((sequence "TODO(t)" "WAIT(w)" "|" "DONE(d)" "CANCELED(c)")))
 
 ;;(setq org-todo-keywords
 ;;      '((sequence "TODO(t!)" "|" "DONE(d!)")
@@ -38,6 +38,23 @@
 ;;      '((sequence "TODO(t!)" "WAIT(w@/!)" "START(s!)"  "FINISH(f!)" "|"
 ;;                  "DONE(d!)" "CANCELED(c@/!)" "ASSIGNED(a@/!)" "PLANNED(p@/!)")))
 
-(setq org-agenda-files (list "D:/agenda/"))
+;; (setq org-agenda-files (list "D:/agenda/"))
+
+
+
+;;--------------------------------------------------------
+;; org mode
+;; https://orgmode.org/
+;;--------------------------------------------------------
+
+(use-package org
+  :ensure t
+  :mode
+  ("\\.org\\'" . org-mode)
+  :init
+  (setq org-todo-keywords '((sequence "TODO(t)" "WAIT(w)" "|" "DONE(d)" "CANCELED(c)")))
+  (setq org-agenda-files (list "~/agenda/"))
+)
+
 
 (provide 'init-org)

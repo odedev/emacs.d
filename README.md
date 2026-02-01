@@ -1,6 +1,9 @@
 
 Emacs config
 
++ [use-package](https://github.com/jwiegley/use-package)
+
+
 ## Windows
 
 ``` shell

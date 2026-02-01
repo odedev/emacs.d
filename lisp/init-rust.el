@@ -13,25 +13,53 @@
 ;; https://github.com/racer-rust/emacs-racer
 ;;--------------------------------------------------------
 
-(install-package 'rust-mode)
-(install-package 'racer)
-(install-package 'company-racer)
+;; (install-package 'rust-mode)
+;; (install-package 'racer)
+;; (install-package 'company-racer)
 
-(add-to-list 'auto-mode-alist '("\\.rs\\'" . rust-mode))
+;; (add-to-list 'auto-mode-alist '("\\.rs\\'" . rust-mode))
 
-;; Rust src directory
-(when (string-equal system-type "windows-nt")
-  (setq racer-rust-src-path "d:/rust/rustlang/src"))
+;; ;; Rust src directory
+;; (when (string-equal system-type "windows-nt")
+;;   (setq racer-rust-src-path "d:/rust/rustlang/src"))
+
+;; ;; rust mode hook
+;; (add-hook 'rust-mode-hook
+;;   (lambda ()
+;;     (racer-mode t)
+;;     (company-racer t)
+;;     (setq rust-indent-offset 2)
+;;     (setq tab-width 2)
+;;     (setq default-tab-width 2)
+;;     (setq indent-tabs-mode nil)))
+
+
+
+;;--------------------------------------------------------
+;; rust-mode
+;;--------------------------------------------------------
+
+(use-package rust-mode
+  :ensure t
+  :mode
+  ("\\.rs\\'" . rust-mode)
+  :init
+  (setq rust-indent-offset 2)
+  (setq tab-width 2)
+  (setq default-tab-width 2)
+  (setq indent-tabs-mode nil)
+  ;; (setq rust-mode-treesitter-derive t)
+  ;; (add-hook 'rust-mode-hook #'eglot-ensure)
+  :hook
+  (rust-mode . eglot-ensure)
+)
 
 ;; rust mode hook
-(add-hook 'rust-mode-hook
-		  (lambda ()
-            (racer-mode t)
-            (company-racer t)
-            (setq rust-indent-offset 2)
-            (setq tab-width 2)
-            (setq default-tab-width 2)
-            (setq indent-tabs-mode nil)))
+;; (add-hook 'rust-mode-hook 'eglot-ensure)
+
+;; (add-to-list 'eglot-server-programs
+;;              '((rust-ts-mode rust-mode) .
+;;                ("rust-analyzer" :initializationOptions (:check (:command "clippy")))))
 
 (provide 'init-rust)
 
