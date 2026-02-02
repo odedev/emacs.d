@@ -8,6 +8,7 @@
 ;;--------------------------------------------------------
 
 (use-package nerd-icons
+  :ensure t
   :custom
   ;; The Nerd Font you want to use in GUI
   ;; "Symbols Nerd Font Mono" is the default and is recommended
@@ -16,6 +17,7 @@
 )
 
 ;; (use-package all-the-icons
+;;   :ensure t
 ;;   :if (display-graphic-p)
 ;; )
 
