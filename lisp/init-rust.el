@@ -44,10 +44,10 @@
   :mode
   ("\\.rs\\'" . rust-mode)
   :init
-  (setq rust-indent-offset 2)
   (setq tab-width 2)
   (setq default-tab-width 2)
   (setq indent-tabs-mode nil)
+  (setq rust-indent-offset 2)
   ;; (setq rust-mode-treesitter-derive t)
   ;; (add-hook 'rust-mode-hook #'eglot-ensure)
   :hook

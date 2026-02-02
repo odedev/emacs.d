@@ -8,13 +8,17 @@
 (require 'init-font)
 
 ;; theme
+(require 'init-icons)
 (require 'init-theme)
+;; (require 'init-theme-doom)
 
 ;; tools
 (require 'init-company)
 (require 'init-ido)
 (require 'init-magit)
 (require 'init-iedit)
+(require 'init-neotree)
+;; (require 'init-editorconfig)
 ;; (require 'init-lsp)
 
 ;; markup language

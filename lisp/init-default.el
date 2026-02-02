@@ -55,6 +55,10 @@
   (setq command-line-default-directory "~/"))
 
 ;;----------------- TAB width ---------------;;
+(setq tab-width 2)
+(setq default-tab-width 2)
+(setq indent-tabs-mode nil)
+
 (setq-default tab-width 2)
 (setq-default default-tab-width 2)
 ;; Tab to Whitespace
@@ -77,7 +81,7 @@
 ;; frame title format --> %f 缓冲区完整路径; %b 文件名; %p 页面百分数; %l 行号;
 (setq frame-title-format "%f")
 ;; 80 column
-(setq default-fill-column 80)
+(setq default-fill-column 120)
 ;; line height
 ;; (setq default-line-spaceing 4)
 ;; search match case
@@ -110,7 +114,7 @@
 
 ;; (set-frame-position (selected-frame) 200 10)
 ;; (set-frame-width (selected-frame) 150)
-;; (set-frame-height (selected-frame) 39)
+;; (set-frame-height (selected-frame) 32)
 
 ;;设置删除记录
 ;;(setq kill-ring-max 200)
